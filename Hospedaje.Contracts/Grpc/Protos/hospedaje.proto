@@ -1,0 +1,117 @@
+syntax = "proto3";
+
+package hotel.hospedaje.v1;
+
+option csharp_namespace = "Hospedaje.Contracts.Grpc.V1";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+service HospedajeGrpc {
+  rpc GetEstadiaById(IdRequest) returns (Estadia);
+  rpc GetEstadiaByGuid(GuidRequest) returns (Estadia);
+  rpc ListEstadias(EstadiaFiltroRequest) returns (EstadiaPage);
+  rpc HacerCheckin(CheckinRequest) returns (EstadiaList);
+  rpc RegistrarCheckout(CheckoutRequest) returns (google.protobuf.Empty);
+  rpc GetEstadiaSnapshot(GuidRequest) returns (Estadia);
+  rpc AddCargo(AddCargoRequest) returns (CargoEstadia);
+  rpc AnularCargo(AnularCargoRequest) returns (google.protobuf.Empty);
+  rpc GetCargosByEstadia(CargosByEstadiaRequest) returns (CargoEstadiaPage);
+  rpc GetCargosByReserva(GuidRequest) returns (CargoEstadiaList);
+}
+
+message IdRequest { int32 id = 1; }
+message GuidRequest { string guid = 1; }
+message PageRequest { int32 page_number = 1; int32 page_size = 2; }
+
+message Estadia {
+  int32 id_estadia = 1;
+  string estadia_guid = 2;
+  int32 id_reserva_habitacion = 3;
+  int32 id_cliente = 4;
+  int32 id_habitacion = 5;
+  google.protobuf.Timestamp checkin_utc = 6;
+  google.protobuf.Timestamp checkout_utc = 7;
+  string estado_estadia = 8;
+  string observaciones_checkin = 9;
+  string observaciones_checkout = 10;
+  bool requiere_mantenimiento = 11;
+  repeated CargoEstadia cargos = 12;
+  bytes row_version = 13;
+}
+
+message CargoEstadia {
+  int32 id_cargo_estadia = 1;
+  string cargo_guid = 2;
+  int32 id_estadia = 3;
+  google.protobuf.Int32Value id_catalogo = 4;
+  string descripcion_cargo = 5;
+  int32 cantidad = 6;
+  string precio_unitario = 7;
+  string subtotal = 8;
+  string valor_iva = 9;
+  string total_cargo = 10;
+  google.protobuf.Timestamp fecha_consumo_utc = 11;
+  string estado_cargo = 12;
+  bytes row_version = 13;
+}
+
+message EstadiaFiltroRequest {
+  PageRequest page = 1;
+  google.protobuf.Int32Value id_reserva_habitacion = 2;
+  google.protobuf.Int32Value id_cliente = 3;
+  google.protobuf.Int32Value id_habitacion = 4;
+  string estado_estadia = 5;
+  google.protobuf.BoolValue requiere_mantenimiento = 6;
+}
+
+message EstadiaPage {
+  repeated Estadia items = 1;
+  int32 total_count = 2;
+  int32 page_number = 3;
+  int32 page_size = 4;
+}
+
+message EstadiaList { repeated Estadia items = 1; }
+
+message CheckinRequest {
+  int32 id_reserva = 1;
+  string usuario = 2;
+}
+
+message CheckoutRequest {
+  int32 id_estadia = 1;
+  string observaciones = 2;
+  bool requiere_mantenimiento = 3;
+  string usuario = 4;
+}
+
+message AddCargoRequest {
+  int32 id_estadia = 1;
+  google.protobuf.Int32Value id_catalogo = 2;
+  string descripcion_cargo = 3;
+  int32 cantidad = 4;
+  string precio_unitario = 5;
+  string valor_iva = 6;
+}
+
+message AnularCargoRequest {
+  int32 id_cargo = 1;
+  string usuario = 2;
+}
+
+message CargosByEstadiaRequest {
+  int32 id_estadia = 1;
+  int32 page_number = 2;
+  int32 page_size = 3;
+}
+
+message CargoEstadiaPage {
+  repeated CargoEstadia items = 1;
+  int32 total_count = 2;
+  int32 page_number = 3;
+  int32 page_size = 4;
+}
+
+message CargoEstadiaList { repeated CargoEstadia items = 1; }

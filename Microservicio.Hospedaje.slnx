@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="Hospedaje.API/Hospedaje.API.csproj" />
+    <Project Path="Hospedaje.Business/Hospedaje.Business.csproj" />
+    <Project Path="Hospedaje.Contracts/Hospedaje.Contracts.csproj" />
+    <Project Path="Hospedaje.DataAccess/Hospedaje.DataAccess.csproj" />
+    <Project Path="Hospedaje.DataManagement/Hospedaje.DataManagement.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+</Solution>

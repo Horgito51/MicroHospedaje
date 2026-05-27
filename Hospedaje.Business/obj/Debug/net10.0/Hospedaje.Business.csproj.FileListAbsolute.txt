@@ -1,0 +1,17 @@
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\bin\Debug\net10.0\Hospedaje.Business.deps.json
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\bin\Debug\net10.0\Hospedaje.Business.dll
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\bin\Debug\net10.0\Hospedaje.Business.pdb
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\bin\Debug\net10.0\Hospedaje.DataAccess.dll
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\bin\Debug\net10.0\Hospedaje.DataManagement.dll
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\bin\Debug\net10.0\Hospedaje.DataManagement.pdb
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\bin\Debug\net10.0\Hospedaje.DataAccess.pdb
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\Hospedaje.Business.csproj.AssemblyReference.cache
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\Hospedaje.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\Hospedaje.Business.AssemblyInfoInputs.cache
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\Hospedaje.Business.AssemblyInfo.cs
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\Hospedaje.Business.csproj.CoreCompileInputs.cache
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\Hospedaj.46A24F30.Up2Date
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\Hospedaje.Business.dll
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\refint\Hospedaje.Business.dll
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\Hospedaje.Business.pdb
+C:\Users\jorge\OneDrive\Escritorio\Puce\Semestre 6\Integracion de sistemas\MicroFinal - No dockers\Microservicio.Hospedaje\Hospedaje.Business\obj\Debug\net10.0\ref\Hospedaje.Business.dll
